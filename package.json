@@ -1,0 +1,31 @@
+{
+  "name": "pwa-todo-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "database": "npx json-server --watch ./database/data.json",
+    "serve": "es-dev-server --app-index index.html --node-resolve --watch -p 8080",
+    "tailwind": "npx tailwindcss build ./styles/style.css -o output.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcorio/PWA-TODO.git"
+  },
+  "author": "Thomas Corio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tcorio/PWA-TODO/issues"
+  },
+  "homepage": "https://github.com/tcorio/PWA-TODO#readme",
+  "dependencies": {
+    "idb": "^5.0.2",
+    "page": "^1.11.6",
+    "tailwindcss": "^1.4.4"
+  },
+  "devDependencies": {
+    "es-dev-server": "^1.48.1",
+    "json-server": "^0.16.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "PWA Todo-list",
+  "short_name": "Todo list",
+  "description": "remember your stuff",
+  "icons": [
+    {
+      "src": "image/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#313131",
+  "background_color": "#ffffff"
+}

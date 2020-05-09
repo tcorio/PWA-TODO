@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="PWA app for a todolist">
+  <meta name="keywords" content="PWA, JavaScript, JS">
+  <meta name="author" content="Thomas Corio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" href="image/logo.png">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#42a5f5">
+  <link rel="preconnect" href="http://localhost:3000">
+  <title>Todo-list</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js');
+    }
+  </script>
+</head>
+<body class="bg-gray-200">
+  <section id="app">
+    <div class="outlet p-6 flex justify-center items-center"></div>
+  </section>
+  <link rel="stylesheet" href="/styles/output.css">
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
